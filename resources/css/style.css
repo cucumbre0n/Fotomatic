@@ -311,7 +311,16 @@ header .mobile {
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  padding: 32px 32px 40px 32px;
+  margin: 64px 38px 46px 38px;
+  height: 635px;
+}
+
+.feature .content {
+  height: 187px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .feature h2 {
@@ -358,6 +367,7 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  margin: auto 1%;
 }
 
 #filters-section .content {
@@ -381,6 +391,9 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  flex-direction: row;
+  height: 375px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -417,16 +430,17 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
-}
-
-#quotes-section content {
-  padding: 5rem 0;
-}
-
-#quotes-section quote {
-  padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+}
+
+#quotes-section .content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#quotes-section .quote {
+  padding-right: 30px;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
@@ -457,17 +471,19 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  height: 62px;
 }
 
 footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  padding: 1.5rem 2rem;
 }
 
 footer .copyright {
   flex-grow: 1;
+  margin-left: 32px;
 }
 
 @media only screen and (min-width: 760px) {
