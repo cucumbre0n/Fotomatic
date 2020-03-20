@@ -107,6 +107,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  html body {
+    overflow-x: hidden;
+  }
+}
+
 /* Header */
 
 header {
@@ -161,6 +167,9 @@ header .mobile {
 
   header .mobile {
     display: block;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   header .content {
@@ -251,6 +260,8 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-size: cover;
+    background-position: center;
   }
 
   #sign-up-cta {
@@ -360,12 +371,21 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
-    padding: 0;
   }
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+
+  .feature .one {
+    background-color: #9b9b9b;
+  }
+
+  .feature .center {
+    font-size: 18px;
+    height: 5%;
   }
 }
 
@@ -463,8 +483,12 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #quotes-section quote {
@@ -500,6 +524,6 @@ footer .copyright {
 
 @media only screen and (min-width: 760px) {
   footer .content {
-    font-size: .625rem;
+    font-size: 10px;
   }
 }
